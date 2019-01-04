@@ -10,6 +10,9 @@ def oxford_comma(array)
       new_array.push(last)
       new_array.join(", ")
     elsif array.length > 3
-      array.join(" , ")
+      last = "and #{array.last}"
+      new_array = array.slice(0..-2)
+      new_array.push(last)
+      new_array.join(", ")
     end
 end
