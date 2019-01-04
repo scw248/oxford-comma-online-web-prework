@@ -5,7 +5,8 @@ def oxford_comma(array)
     elsif array.length == 2
       array.join(' and ')
     elsif array.length == 3
-      array.index
+      array.index(-1) = "and #{fruit}"
+      
       #array.each.with_index(1) do |fruit, index|
       #if index == -1 
        # fruit = "and #{fruit}"
